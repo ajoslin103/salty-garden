@@ -17,9 +17,10 @@
       foreach ($feeds->channel->item as $item) {
 
         echo(var_dump($item));
+        echo("---\n\n")
 
         $title = $item->title;
-        $link = $item->attributes->url;
+        $link = $item->enclosure->url;
         $description = $item->description;
         $postDate = $item->pubDate;
         $pubDate = date('D, d M Y',strtotime($postDate));
