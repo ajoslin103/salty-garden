@@ -1,16 +1,8 @@
 <div class="content">
 
- <form method="post" action="">
-  <input type="text" name="feedurl" placeholder="Enter website feed URL">&nbsp;<input type="submit" value="Submit" name="submit">
- </form>
  <?php
 
- $url = "https://makitweb.com/feed/";
- if(isset($_POST['submit'])){
-   if($_POST['feedurl'] != ''){
-     $url = $_POST['feedurl'];
-   }
- }
+ $url = "https://salty-garden-64703.herokuapp.com/feed.xml";
 
  $invalidurl = false;
  if(@simplexml_load_file($url)){
@@ -29,6 +21,8 @@
 
   echo "<h2>".$site."</h2>";
   foreach ($feeds->channel->item as $item) {
+
+    echo(var_dump($item))
 
    $title = $item->title;
    $link = $item->link;
