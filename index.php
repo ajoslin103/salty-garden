@@ -16,8 +16,9 @@
 				$("#search").on("input", function() {
 					frag = $("#search").val()
 					console.debug(`frag: ${frag}`)
+					reggie = new RegExp(frag, 'i')
 					$(".post").each(function(i, obj) {
-						if ($(obj).text().includes(frag)) {
+						if (reggie.test($(obj).text())) {
 							$(obj).show();
 						} else {
 							$(obj).hide();
