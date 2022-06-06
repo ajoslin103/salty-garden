@@ -13,7 +13,7 @@
 	}
 
 
-	$i=100;
+	$i=0;
 	if(!empty($feeds)) {
 
 		$site = $feeds->channel->title;
