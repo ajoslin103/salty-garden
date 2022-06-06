@@ -23,10 +23,12 @@
 	foreach ($feeds->channel->item as $item) {
 
 	$enclosure = $item->enclosure;
-	echo(print_r($enclosure.url));
+
+	echo(print_r($item->enclosure->url));
+	echo(print_r($nclosure->url));
 
 	$title = $item->title;
-	$link = $item->enclosure->url;
+	$link = $enclosure->url;
 	$description = $item->description;
 	$postDate = $item->pubDate;
 	$pubDate = date('D, d M Y',strtotime($postDate));
