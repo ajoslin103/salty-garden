@@ -22,10 +22,7 @@
 	echo "<h2>".$site."</h2>";
 	foreach ($feeds->channel->item as $item) {
 
-	$enclosure = $item->enclosure;
-
-	echo(print_r($item->enclosure->url));
-	echo(print_r($nclosure->url));
+	$enclosure = $item->enclosure[0];
 
 	$title = $item->title;
 	$link = $enclosure->url;
