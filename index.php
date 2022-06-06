@@ -19,7 +19,7 @@
         echo(var_dump($item));
 
         $title = $item->title;
-        $link = $item->link;
+        $link = $item->attributes->url;
         $description = $item->description;
         $postDate = $item->pubDate;
         $pubDate = date('D, d M Y',strtotime($postDate));
