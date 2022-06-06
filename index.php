@@ -23,7 +23,7 @@
 	foreach ($feeds->channel->item as $item) {
 
 	$enclosure = $item->enclosure;
-	echo(print_r($enclosure["url"]));
+	echo(print_r($enclosure.url));
 
 	$title = $item->title;
 	$link = $item->enclosure->url;
