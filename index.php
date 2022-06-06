@@ -10,11 +10,13 @@
         <meta http-equiv="cleartype" content="on">
 
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-        <script type="javascript">
-			$(document).ready(function() {
-				$('#search').on('input', () => {
-					frag = $('#search').val()
-					$('.post').each(function() {
+		<script>
+			$(document).ready(function(){
+				console.debug(`$(document).ready`)
+				$("#search").on("input", function() {
+					frag = $this.val()
+					console.debug(`frag: ${frag}`)
+					$(".post").each(function() {
 						if ($this.text().includes(frag)) {
 							$this.show();
 						} else {
@@ -48,13 +50,10 @@
 			$site = $feeds->channel->title;
 ?>
 			<h2>
-				<span><?php echo $site; ?></span>
-				<span>&nbsp;&nbsp;&nbsp;</span>
-				<span>
-					<form>
-						<input type="text" id="search" size="25"/>
-					</form>
-				</span>
+				<form>
+					<label for="search">Search <?php echo $site; ?></label>
+					<input type="text" id="search" size="25"/>
+				</form>
 			</h2>
 <?php
 			foreach ($feeds->channel->item as $item) {
