@@ -16,11 +16,11 @@
 				$("#search").on("input", function() {
 					frag = $("#search").val()
 					console.debug(`frag: ${frag}`)
-					$(".post").each(function() {
-						if ($this.text().includes(frag)) {
-							$this.show();
+					$(".post").each(function(i, obj) {
+						if (obj.text().includes(frag)) {
+							obj.show();
 						} else {
-							$this.hide();
+							obj.hide();
 						}
 					})
 				})
