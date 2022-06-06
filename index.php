@@ -13,7 +13,7 @@
 	}
 
 
-	$i=0;
+	$i=100;
 	if(!empty($feeds)) {
 
 		$site = $feeds->channel->title;
@@ -24,8 +24,8 @@
 
 			$enclosure = $item->enclosure[0];
 
-			echo(print_r($item->enclosure));
-			echo(print_r($enclosure));
+			echo(print_r($item));
+			echo(var_dump($item));
 
 			$title = $item->title;
 			$link = $enclosure->url;
