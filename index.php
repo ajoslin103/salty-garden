@@ -22,7 +22,7 @@
 		foreach ($feeds->channel->item as $item) {
 
 			$title = $item->title;
-			$link = (string) $item->enclosure->url;
+			$link = (string) $item->enclosure->attributes()->url;
 			$description = $item->description;
 			$postDate = $item->pubDate;
 			$pubDate = date('D, d M Y',strtotime($postDate));
