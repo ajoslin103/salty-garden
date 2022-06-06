@@ -27,6 +27,7 @@
 			$postDate = $item->pubDate;
 			$pubDate = date('D, d M Y',strtotime($postDate));
 
+			echo "<p>$link</p>";
 
 			if($i>=5) break;
  ?>
