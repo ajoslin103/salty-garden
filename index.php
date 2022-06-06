@@ -95,8 +95,22 @@
 			}
 		}
 ?>
-        <script src="js/vendor/jquery-2.1.3.min.js"></script>
-        <script src="js/helper.js"></script>
-        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     </body>
+	<foot>
+        <script type="javascript">
+			$(document).ready(function() {
+				$('#search').change(() => {
+					frag = $('#search').val()
+					$('.post').each(function(i, obj) {
+						if (obj.text().includes(frag)) {
+							obj.show();
+						} else {
+							obj.hide();
+						}
+					})
+				})
+			});
+		</script>
+	</foot>
 </html>
