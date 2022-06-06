@@ -17,7 +17,7 @@
       foreach ($feeds->channel->item as $item) {
 
         echo(var_dump($item));
-        echo("---\n\n")
+        echo("---\n\n");
 
         $title = $item->title;
         $link = $item->enclosure->url;
