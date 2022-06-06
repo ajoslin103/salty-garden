@@ -17,18 +17,12 @@
 	if(!empty($feeds)) {
 
 		$site = $feeds->channel->title;
-		$sitelink = $feeds->channel->link;
 
 		echo "<h2>".$site."</h2>";
 		foreach ($feeds->channel->item as $item) {
 
-			$enclosure = $item->enclosure[0];
-
-			echo(print_r($item));
-			echo(var_dump($item));
-
 			$title = $item->title;
-			$link = $enclosure->url;
+			$link = $item->enclosure;
 			$description = $item->description;
 			$postDate = $item->pubDate;
 			$pubDate = date('D, d M Y',strtotime($postDate));
