@@ -14,7 +14,7 @@
 			$(document).ready(function(){
 				console.debug(`$(document).ready`)
 				$("#search").on("input", function() {
-					frag = $this.val()
+					frag = $("#search").val()
 					console.debug(`frag: ${frag}`)
 					$(".post").each(function() {
 						if ($this.text().includes(frag)) {
