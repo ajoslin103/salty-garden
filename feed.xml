@@ -98,20 +98,23 @@
  <itunes:author>Tate</itunes:author>
  <itunes:explicit>no</itunes:explicit>
 </item>
- <item> <itunesu:category itunesu:code="102101" />
- <title>BMW Tate Live: The Future of Live</title>
- <link>https://www.tate.org.uk/context-comment/audio/bmw-tate-live-future-live</link>
- <description>The talk addresses some of the thoughts and observations emerging from the inter-disciplinary debates around the nature of the performative and live art in order to identify future trajectories for performance in this highly mediated digital age</description>
- <category>Podcasts</category>
- <enclosure length="117207290" type="audio/mpeg" url="http://static.tate.org.uk/1/onlineevents/podcast/mp3/2014_12_01_The_Future_of_Live.mp3" />
- <guid isPermaLink="false">https://www.tate.org.uk/context-comment/audio/bmw-tate-live-future-live</guid>
- <pubDate>Tue, 30 Dec 2014 19:14:34 +0000</pubDate>
- <source url="https://www.tate.org.uk/podcast/feed.xml">Tate Events</source>
- <itunes:summary>The talk addresses some of the thoughts and observations emerging from the inter-disciplinary debates around the nature of the performative and live art in order to identify future trajectories for performance in this highly mediated digital age</itunes:summary>
- <itunes:duration>02:00:19</itunes:duration>
- <itunes:author>Tate</itunes:author>
- <itunes:explicit>no</itunes:explicit>
+
+ <item> 
+    <itunesu:category itunesu:code="102101" />
+    <title>BMW Tate Live: The Future of Live</title>
+    <link>https://www.tate.org.uk/context-comment/audio/bmw-tate-live-future-live</link>
+    <description>The talk addresses some of the thoughts and observations emerging from the inter-disciplinary debates around the nature of the performative and live art in order to identify future trajectories for performance in this highly mediated digital age</description>
+    <category>Podcasts</category>
+    <enclosure length="117207290" type="audio/mpeg" url="http://static.tate.org.uk/1/onlineevents/podcast/mp3/2014_12_01_The_Future_of_Live.mp3" />
+    <guid isPermaLink="false">https://www.tate.org.uk/context-comment/audio/bmw-tate-live-future-live</guid>
+    <pubDate>Tue, 30 Dec 2014 19:14:34 +0000</pubDate>
+    <source url="https://www.tate.org.uk/podcast/feed.xml">Tate Events</source>
+    <itunes:summary>The talk addresses some of the thoughts and observations emerging from the inter-disciplinary debates around the nature of the performative and live art in order to identify future trajectories for performance in this highly mediated digital age</itunes:summary>
+    <itunes:duration>02:00:19</itunes:duration>
+    <itunes:author>Tate</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
 </item>
+
  <item> <itunesu:category itunesu:code="102101" />
  <title>Susan Meiselas in conversation with Simon Baker</title>
  <link>https://www.tate.org.uk/context-comment/audio/susan-meiselas-conversation-simon-baker</link>
