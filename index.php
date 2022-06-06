@@ -12,7 +12,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
         <script type="javascript">
 			$(document).ready(function() {
-				$('#search').on('change', () => {
+				$('#search').on('input', () => {
 					frag = $('#search').val()
 					$('.post').each(function() {
 						if ($this.text().includes(frag)) {
@@ -51,7 +51,9 @@
 				<span><?php echo $site; ?></span>
 				<span>&nbsp;&nbsp;&nbsp;</span>
 				<span>
-					<input type="text" id="search" size="25"/>
+					<form>
+						<input type="text" id="search" size="25"/>
+					</form>
 				</span>
 			</h2>
 <?php
