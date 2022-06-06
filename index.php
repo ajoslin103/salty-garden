@@ -12,7 +12,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
         <script type="javascript">
 			$(document).ready(function() {
-				$('#search').change(() => {
+				$('#search').on('change', () => {
 					frag = $('#search').val()
 					$('.post').each(function() {
 						if ($this.text().includes(frag)) {
