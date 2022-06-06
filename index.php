@@ -1,8 +1,5 @@
 <div class="content">
 
- <form method="post" action="">
-  <input type="text" name="feedurl" placeholder="">&nbsp;<input type="submit" value="Submit" name="submit">
- </form>
  <?php
 
  $url = "https://salty-garden-64703.herokuapp.com/feed.xml";
@@ -25,7 +22,7 @@
   echo "<h2>".$site."</h2>";
   foreach ($feeds->channel->item as $item) {
 
-   echo(print_r($item->enclosure))
+   echo(print_r($item->enclosure));
 
    $title = $item->title;
    $link = $item->enclosure->url;
