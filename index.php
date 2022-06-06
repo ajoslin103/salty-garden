@@ -12,7 +12,6 @@
 		echo "<h2>Invalid RSS feed URL.</h2>";
 	}
 
-
 	$i=0;
 	if(!empty($feeds)) {
 
@@ -29,7 +28,7 @@
 
 			echo "<p>".$link."</p>";
 
-			if($i>=5) break;
+			// if($i>=5) break;
  ?>
 			<div class="post">
 				<div class="post-head">
@@ -37,7 +36,7 @@
 					<span><?php echo $pubDate; ?></span>
 				</div>
 				<div class="post-content">
-					<?php echo implode(' ', array_slice(explode(' ', $description), 0, 20)) . "..."; ?> <a href="<?php echo $link; ?>">Read more</a>
+					<?php echo $description; ?>
 				</div>
 			</div>
 
