@@ -17,10 +17,10 @@
 					frag = $("#search").val()
 					console.debug(`frag: ${frag}`)
 					$(".post").each(function(i, obj) {
-						if (obj.text().includes(frag)) {
-							obj.show();
+						if ($(obj).text().includes(frag)) {
+							$(obj).show();
 						} else {
-							obj.hide();
+							$(obj).hide();
 						}
 					})
 				})
