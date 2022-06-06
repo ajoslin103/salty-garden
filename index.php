@@ -43,7 +43,7 @@
 
 		<div class="content">
 
- <?php
+<?php
 
 		$url = "https://salty-garden-64703.herokuapp.com/feed.xml";
 
@@ -59,8 +59,15 @@
 		if(!empty($feeds)) {
 
 			$site = $feeds->channel->title;
-
-			echo "<h2>".$site."</h2>";
+?>
+			<h2>
+				<span><?php echo $site; ?></span>
+				<span>&nbsp;&nbsp;&nbsp;</span>
+				<span>
+					<input type="text" id="search" size="25"/>
+				</span>
+			</h2>
+<?php
 			foreach ($feeds->channel->item as $item) {
 
 				$title = $item->title;
@@ -68,7 +75,7 @@
 				$description = $item->description;
 				$postDate = $item->pubDate;
 				$pubDate = date('D, d M Y',strtotime($postDate));
- ?>
+?>
 				<div class="post">
 					<div class="post-head">
 						<h2><a class="feed_title" href="<?php echo $link; ?>"><?php echo $title; ?></a></h2>
@@ -79,7 +86,7 @@
 					</div>
 				</div>
 
- <?php
+<?php
 				$i++;
 			}
 		} else {
@@ -87,7 +94,7 @@
 				echo "<h2>No item found</h2>";
 			}
 		}
- ?>
+?>
         <script src="js/vendor/jquery-2.1.3.min.js"></script>
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>
